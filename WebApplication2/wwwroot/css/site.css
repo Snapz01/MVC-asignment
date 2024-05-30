@@ -13,8 +13,8 @@ html {
 }
 
 html {
-  position: relative;
-  min-height: 100%;
+    position: relative;
+    min-height: 100%;
 }
 
 body {
@@ -31,35 +31,54 @@ header {
     color: white;
 }
 
-.nav-link:hover {
-    color: green;
-}
-
-nav-link:active {
-    color: red;
-}
+    .nav-link:hover {
+        background-color: #2b3139;
+    }
 
 .nav-center {
     justify-content: center;
 }
 
 .nav-link {
-    border: solid 1px grey;
+    border: solid 1px #2b3139;
     margin: 20px 0 0 20px;
-    border-radius: 20%;
+    border-radius: 15px;
     background-color: #23272e;
 }
 
 main {
     background-color: #23272e;
-    border: solid 1px grey;
+    border: solid 1px #2b3139;
     border-radius: 25px;
     padding: 30px;
+    margin: 10px;
 }
 
 embed {
     border-radius: 25px;
     padding: 0;
-    margin: 0;
+    margin: auto;
+    min-height: 92%;
+    min-width: 100%;
+}
 
+.pb-3 {
+    height: 1100px;
+    width: 100%;
+}
+
+header {
+    background-color: #23272e;
+    border-radius: 25px;
+    margin: 0 60px 0 80px;
+}
+
+.date-time-clock {
+    color: grey;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.date-time-clock:hover {
+    color: white;
 }

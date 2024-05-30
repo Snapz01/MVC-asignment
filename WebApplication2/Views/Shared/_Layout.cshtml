@@ -11,7 +11,7 @@
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm border-bottom box-shadow mb-3">
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index"> <img src="~/Materials/Timmy_text.png" alt="Alternate Text" height="50" width="80" /></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
@@ -33,6 +33,7 @@
                             <a class="nav-link" asp-area="" asp-controller="Home" asp-action="Projects">Projects</a>
                         </li>
                     </ul>
+                    <p class="date-time-clock">Time is: @DateTime.Now.ToString("HH:mm")</p>
                 </div>
             </div>
         </nav>
@@ -42,11 +43,11 @@
             @RenderBody()
         </main>
     </div>
-    <footer class="border-top footer text-muted">
+    <footer class="footer text-muted">
         <div class="container">
             &copy; Timmy Larsson 2024 - first_web_application -
             <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-            <p>Today's date is: @DateTime.Now.ToString()</p>
+            <p class="date-time">Today's date is: @DateTime.Now.ToString("MM/dd,/yyyy")</p>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
