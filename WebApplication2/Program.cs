@@ -26,6 +26,10 @@ namespace WebApplication2
 
             app.UseAuthorization();
 
+            app.MapControllerRoute(name: "test",
+            pattern: "Doctor/",
+            defaults: new { controller = "Doctor", action = "Doctor" });
+
             app.MapControllerRoute(
                 name: "default",
                 pattern: "{controller=Home}/{action=Index}/{id?}");
