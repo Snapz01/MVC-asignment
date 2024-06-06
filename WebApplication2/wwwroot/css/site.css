@@ -84,9 +84,9 @@ embed {
     padding: 10px;
 }
 
-    .date-time-clock:hover {
-        color: white;
-    }
+.date-time-clock:hover {
+    color: white;
+}
 
 .footer {
     text-align: center;
@@ -172,4 +172,12 @@ input:checked + .slider:before {
     content: "";
     display: table;
     clear: both;
+}
+
+.mainBox {
+    background-color: #23272e;
+    border: 1px solid #2b3139;
+    border-radius: 25px;
+    padding: 30px;
+    margin: 10px;
 }
