@@ -17,8 +17,8 @@ namespace WebApplication2.Controllers
 
             if (isFahrenheit)
             {
-                // Fahrenheit conditions
-                if (temperature >= 100.4)
+                // Fahrenheit
+                if (temperature >= 100)
                 {
                     message = "You have fever.";
                 }
@@ -33,7 +33,7 @@ namespace WebApplication2.Controllers
             }
             else
             {
-                // Celsius conditions
+                // Celsius
                 if (temperature >= 38)
                 {
                     message = "You have fever.";
