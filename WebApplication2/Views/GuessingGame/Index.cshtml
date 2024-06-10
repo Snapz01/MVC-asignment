@@ -1,21 +1,17 @@
 ﻿@using Microsoft.AspNetCore.Server.Kestrel.Core
 @{
-    ViewBag.Title = "Guess the number";
-    Layout = "_Layout";
+    ViewBag.Title = "Guessing Game";
 }
 <div class="mainBox">
-<h1>Guessing Game</h1>
+<h2>Guessing Game</h2>
 
-<form asp-action="Guess" method="post" onsubmit="setHiddenInputValue()">
+<p>@ViewBag.Message</p>
+
+<form method="post" asp-controller="GuessingGame" asp-action="GuessingGame">
     <div>
-        <label for="Guess">Enter your guess:</label>
-        <input type="number" step="1" name="ramdomNumber" id="randomNumber" min-length="1" maxlength="100" required="requried" />
+        <label for="guess">Your Guess:</label>
+        <input type="number" id="guess" name="guess" required />
     </div>
-    <div>
-        <input type="submit" value="Check" />
-    </div>
+    <button type="submit">Submit</button>
 </form>
-<p>
-    //CheatWindow// The random number between 1 and 100 is: <strong>@ViewBag.RandomNumber</strong>
-</p>
 </div>

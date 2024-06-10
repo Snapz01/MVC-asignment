@@ -8,6 +8,7 @@ namespace WebApplication2
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
+            builder.Services.AddSession();
 
             var app = builder.Build();
 
@@ -23,7 +24,7 @@ namespace WebApplication2
             app.UseStaticFiles();
 
             app.UseRouting();
-
+            app.UseSession();
             app.UseAuthorization();
 
             app.MapControllerRoute(name: "Doctor",

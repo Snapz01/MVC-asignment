@@ -175,7 +175,7 @@ input:checked + .slider:before {
 }
 
 .mainBox {
-    background-color: #23272e;
+    background-color: #3b434e;
     border: 1px solid #2b3139;
     border-radius: 25px;
     padding: 30px;
